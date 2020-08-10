@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="../../assets/img/brand_img/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/font_awesome/all.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/upload-and-crop-image/croppie.css" />
+    <link rel="stylesheet" href="../../assets/vendor/jquery/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="../../assets/sign_css_js/css/regi_style.css">
+
+    <title>Registration Page</title>
+</head>
+<body>
+
+    <div class="container-fluid body">
+        <div class="row">
+            <div class="col-12 text-center mt-4 ">
+                <img src="../../assets/img/brand_img/logo.png" width="130" height="130"
+                    class="img-fluid rounded-circle z-depth-3 mt-3" alt="">
+            </div>
+            <div class=" col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1 mt-5 mb-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <strong>Registration Page/</strong> Step-2
+                    </div>
+                    <div class="card-body card-block">
+                        <form action="registration_3.html" method="post"
+                            class="form-horizontal needs-validation" novalidate>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="from_full_name" class="form-control-label">Full Name</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="from_full_name"
+                                            placeholder="Please Enter Your full Name" name="full_name" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a Full Name.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="from_phone" class="form-control-label">Phone No.</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="from_phone"
+                                            placeholder="Please Enter a Phone No " required>
+                                        <div class="invalid-feedback">
+                                            Please choose a Phone No.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row from-group mb-3">
+                                <div class="col-md-3">
+                                    <label for="form_date" class="form-control-label">Date of Birth</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="form_date"
+                                            placeholder="Please Enter a Date of Birth " required>
+                                        <div class="invalid-feedback">
+                                            Please choose a Date of Birth.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+  
+                            <div class="row form-group">
+                                <div class="col-md-3 ">
+                                    <label for="upload_image" class="form-control-label">Upload Image</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Upload</span>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="upload_image"
+                                                id="upload_image">
+                                            <label for="from_image_2" class="custom-file-label" id="from_image_2">Choose
+                                                File</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    Next <i class="fa fa-angle-double-right"></i>
+                                </button>
+                                <br>
+                                <hr>
+                                <div class="form-group text-center">
+                                    Have an account?, <a href="login_1.html">Sign In</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="uploadimageModal" class="modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title ">Upload & Crop Image</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 text-center">
+                            <div id="image_demo" style="width:350px; margin-top:30px"></div>
+                        </div>
+                        <div class="col-md-4" style="padding-top:30px;">
+                            <br />
+                            <br />
+                            <br />
+                            <button class="btn btn-success crop_image">Crop & Upload Image</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button  class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../../assets/vendor/upload-and-crop-image/croppie.js"></script>
+    <script src="../../assets/vendor/jquery/jquery-ui/jquery-ui.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/sign_css_js/js/regi_boot_valid.js"></script>
+
+    <script>
+        $(function () {
+            $("#form_date").datepicker({
+                dateFormat: "dd-mm-yy",
+                changeMonth: true,
+                changeYear: true,
+                showButtonPanel: true,
+                closeText: "close"
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $image_crop = $('#image_demo').croppie({
+                enableExif: true,
+                viewport: {
+                    width: 200,
+                    height: 200,
+                    type: 'square' //circle
+                },
+                boundary: {
+                    width: 300,
+                    height: 300
+                }
+            });
+
+            $('#upload_image').on('change', function () {
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    $image_crop.croppie('bind', {
+                        url: event.target.result
+                    }).then(function () {
+                        console.log('jQuery bind complete');
+                    });
+                }
+                reader.readAsDataURL(this.files[0]);
+                $('#uploadimageModal').modal('show');
+            });
+
+            $('.crop_image').click(function (event) {
+                $image_crop.croppie('result', {
+                    type: 'canvas',
+                    size: 'viewport'
+                }).then(function (response) {
+                    $.ajax({
+                        url: "upload-and-crop-image/upload.php",
+                        type: "POST",
+                        data: { "image": response },
+                        success: function (data) {
+                            $('#uploadimageModal').modal('hide');
+                            $('#uploaded_image').html(data);
+                        }
+                    });
+                })
+            });
+
+        });  
+    </script>
+
+</body>
+
+</html>

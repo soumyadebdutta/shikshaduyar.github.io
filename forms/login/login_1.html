@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="../../assets/img/brand_img/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/font_awesome/all.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/jquery/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="../../assets/resourses/css/preloader.css">
+    <link rel="stylesheet" href="../../assets/sign_css_js/css/regi_style.css">
+
+    <title>Login Page</title>
+</head>
+
+
+<body onload="mypreloader()">
+    <div id="loading">
+        <div class="bookshelf_wrapper">
+            <ul class="books_list">
+                <li class="book_item first"></li>
+                <li class="book_item second"></li>
+                <li class="book_item third"></li>
+                <li class="book_item fourth"></li>
+                <li class="book_item fifth"></li>
+                <li class="book_item sixth"></li>
+            </ul>
+            <div class="shelf"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid body_1 ">
+        <div class="row ">
+            <div class="col-12 text-center mt-4 ">
+                <img src="../../assets/img/brand_img/logo.png" width="130" height="130"
+                     class="img-fluid rounded-circle z-depth-3 mt-3" alt="">
+            </div>
+            <div class=" col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1 mt-5 mb-4">
+                <div class="card mb-5">
+                    <div class="card-header text-center">
+                        <strong>LogIn Page/</strong> Step-1
+                    </div>
+                    <div class="card-body card-block ">
+                        <form action="login_2.html" method="post"
+                              class="form-horizontal needs-validation" novalidate>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="from_email" class="form-control-label">Email</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="from_email"
+                                               placeholder="Please Enter Your Email" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a Email.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    Next <i class="fa fa-angle-double-right"></i>
+                                </button>
+                                <br>
+                                <hr>
+                                <div class="form-group text-center">
+                                    Have an account?, <a href="registration_1.html">Sign Up</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../../assets/vendor/jquery/jquery-ui/jquery-ui.js"></script>
+<script src="../../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../assets/sign_css_js/js/regi_boot_valid.js"></script>
+<script>
+    var preloader= document.getElementById('loading');
+    function mypreloader(){
+        preloader.style.display='none';
+    }
+</script>
+
+</body>
+
+
+</html>
