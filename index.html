@@ -20,6 +20,7 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="assets/resourses/css/preloader.css">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -38,8 +39,20 @@
   ======================================================== -->
 </head>
 
-<body>
-
+<body onload="mypreloader()">
+    <div id="loading">
+        <div class="bookshelf_wrapper">
+            <ul class="books_list">
+                <li class="book_item first"></li>
+                <li class="book_item second"></li>
+                <li class="book_item third"></li>
+                <li class="book_item fourth"></li>
+                <li class="book_item fifth"></li>
+                <li class="book_item sixth"></li>
+            </ul>
+            <div class="shelf"></div>
+        </div>
+    </div>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
 
@@ -869,6 +882,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/resourses/js/main.js"></script>
+	<script>
+    var preloader= document.getElementById('loading');
+    function mypreloader(){
+        preloader.style.display='none';
+    }
+</script>
 
 </body>
 
